@@ -1,0 +1,11 @@
+.git
+.idea
+basic_app
+Django_Website
+db.sqlite3
+manage.py
+static
+templates
+Procfile
+requirements.txt
+runtime.txt
