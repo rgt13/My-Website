@@ -15,4 +15,4 @@ def projects(request):
     return render(request, "basic_app/projects.html")
 
 def colorgame(request):
-    return render(request, "basic_app/Color_Game/Color.html")
+    return render(request, "basic_app/Color.html")
