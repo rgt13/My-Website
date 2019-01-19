@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT app:rgt219-website
+web: gunicorn Django_Website.wsgi
