@@ -75,23 +75,6 @@ img {
   text-align: center;
 }
 
-.back {
-  background: url('/images/titans.JPG') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: black;
-}
-
-.nashville {
-  background: url("../Website/images/nashville.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 
 
 .block-content {
