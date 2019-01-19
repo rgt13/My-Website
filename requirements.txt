@@ -1,4 +1,3 @@
-.git
 .idea
 basic_app
 Django_Website
