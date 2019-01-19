@@ -1,0 +1,117 @@
+{% extends "basic_app/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+      <!-- <div style="background: url('/static/images/nashville.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;">
+
+        <div class="padded">
+          <div class="ui raised inverted very text container segment" style="background: rgba(0, 0, 0, 0.75);">
+            <img style="width: 400px;
+            height: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;"  src="{%static 'images/graduation.JPG' %}"/>
+
+            <div style="width: 30%; text-align: center;" class="ui raised very text container segment">
+              <h2>Quick Bio</h2>
+            </div>
+            <div style="width: 80%;" class="ui raised very text container segment">
+              <p class="middle">My name is Ryan Thomas. I was born in the great city of Nashville Tennessee. I'm an avid Titans & Predators fan, a proud Florida State University graduate, and a highly-motivated programmer.</p>
+            </div>
+          </div>
+
+          <div class="ui raised inverted very text container segment" style="background: none;">
+            <img class="bigfillerpic" src="{%static 'images/christmas.JPG' %}"/>
+            <div style="width: 30%; text-align: center;" class="ui raised very text container segment">
+              <h2>Hobbies</h2>
+            </div>
+            <div style="width: 80%;" class="ui raised very text container segment">
+              <p class="middle">My hobbies include:</p>
+              <ul>
+                <li>Piano</li>
+                <li>Playing Soccer</li>
+                <li>Skateboarding</li>
+                <li>Traveling</li>
+                <li>Video Games</li>
+                <li>Listening to Sports & Video Game Podcasts</li>
+                <li>Working Out</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ui raised inverted very text container segment" style="background: none;">
+            <img class="bigfillerpic" src="{%static 'images/SHPE.JPG' %}"/>
+            <div style="width: 30%; text-align: center;" class="ui raised very text container segment">
+              <h2>Skills</h2>
+            </div>
+            <div style="width: 80%;" class="ui raised very text container segment">
+              <p class="middle">Below are my coding proficiencies:</p>
+              <ul>
+                <li>C / C++ / C#</li>
+                <li>Java (Oracle, Linux)</li>
+                <li>Python (Django, Flask, Data Analytics) / Tableau</li>
+                <li>Ruby (Rails)</li>
+                <li>Unity / Unreal / JavaFX</li>
+                <li>HTML5 / CSS / JavaScript (Angular, React, jQuery, AJAX)</li>
+                <li>SQL (MySQL, PostgreSQL, SQL Server)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ui raised inverted very text container segment" style="background: none;">
+            <img class="bigfillerpic" src="{%static 'images/soccer.gif' %}">
+            <div style="width: 30%; text-align: center;" class="ui raised very text container segment">
+              <h2>Goals</h2>
+            </div>
+            <div style="width: 80%;" class="ui raised very text container segment">
+              <p class="middle">My main priorities include staying up to date on the programming world, constantly looking for ways to improve my coding habits, as well as keep the conventions for solid programming. I strive to be a Lead Software Developer, taking every step of the way as serious and as precise as possible to attain this achievement.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div> -->
+      <div class="ui main text container">
+          <h1 class="ui header" style="color: white; margin-top: 30px;">About Me</h1>
+      </div>
+
+      <div class="ui text container">
+        <img src="{% static 'images/edc_cropped.JPG' %}" class="ui medium right floated image transition visible"/>
+        <p style="color: white; font-size: 20px; margin-top: 30px; background: rgba(0,0,0,0);">
+          My name is Ryan Thomas. I was born in the great city of Nashville, Tennessee on February 19, 1995. I currently reside in
+          the small town of Naples, FL. I am an avid supporter of the Tennessee Titans, a stout advocate of Bayern Munich Football Club, and a very
+          motivated software developer. I strive to be a professional Software Engineer, constantly learning new methodologies,
+          frameworks, and styles of coding.
+        </p>
+
+        <img src="{% static 'images/FSU.JPG' %}" class="ui medium left floated image transition visible"/>
+        <p style="color: white; font-size: 20px; margin-top: 30px; background: rgba(0,0,0,0);">
+          I am a proud graduate of Florida State University earning a B.S. in Computer Engineering, as well as a minor in Mathematics.
+          I am a member of the world class organization of Theta Chi Fraternity, where I've dedicated countless hours providing for new members, participating
+          in numerous philanthropies, courting for homecoming, and winning multiple intramural sports championships. Go Noles!
+        </p>
+
+        <img src="https://media.giphy.com/media/ZSReduf0UEJOM/giphy.gif" class="ui medium right floated image transition visible"/>
+        <p style="color: white; font-size: 20px; margin-top: 30px; background: rgba(0,0,0,0);">
+          My interest in programming is mainly a consequence of my love for video games. I've played just about every popular video game that's ever been
+          released, and I still play plenty to this day. I've actually programmed one of my own as part of a group project in college, completely through
+          Unity and C#. The details can be found on the projects page of this website. Click the button below to play the game!</br>
+          <a href="https://tfield954.itch.io/"><button class="ui button inverted blue"><i class="ui icon gamepad"></i>Play Game</button></a>
+        </p>
+
+        <img src="https://media.giphy.com/media/aNTYdoZaKU7YY/giphy.gif" class="ui medium left floated image transition visible"/>
+        <p style="color: white; font-size: 20px; margin-top: 30px; background: rgba(0,0,0,0);">
+          My main coding language proficiencies include C, C++, C#, Java, Python, Ruby, and SQL for the backend. For the frontend, they consist of
+          Javascript(Node.js), HTML, CSS, jQuery, AJAX, and Bootstrap/SemanticUI styling. I also have extensive experience in API and server design,
+          through the use of Flask, Django, MySQL, PostGreSQL, Rails, Apache Tomcat, and Java Servlets. I've gained experience in unit, system and
+          integration tests using PyTest, PyUnit, DocTest & Nose with Python, jUnit with Java, and MS Tests with C#.
+        </p>
+
+      </div>
+
+{% endblock %}

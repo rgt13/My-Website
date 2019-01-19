@@ -1,0 +1,43 @@
+{% extends "basic_app/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div>
+      <div class="padded">
+        <div class="ui raised inverted very text container segment" style="background: none;">
+          <div class="ui left rail">
+            <div class="ui segment inverted middle" style="margin-top: 30px;">
+              <p id="spongebob" class="" style="margin-top: 10px;"></p>
+              <button id="giphy" class="ui button inverted red">Generate Gif</button>
+            </div>
+          </div>
+          <div class="ui segment inverted" style="background: none;">
+            <h1 class="ui header middle">Welcome to my website!</h1>
+            <p class="middle">Please select one of the buttons below to learn more!</p>
+            <img class="fillerpic" style="margin-bottom: 30px;" src="{% static 'images/headshot.JPG' %}"/>
+
+            <div class="btncontainer fit">
+              <a href="{% url 'basic_app:about' %}"><button class="ui button teal btn"><i class="address card icon"></i>About Me</button></a>
+              <a href="{% url 'basic_app:projects' %}"><button class="ui button purple btn"><i class="code icon"></i>Projects</button></a>
+              <a href="{% static 'media/resume.pdf' %}"><button class="ui button green btn"><i class="file alternate icon"></i>Resume</button></a>
+              <!-- <a href="{% url 'basic_app:gifgenerator' %}"><button class="ui button red btn"><i class="tv icon"></i>Gif Generator</button></a> -->
+            </div>
+          </div>
+
+          <div class="ui right rail">
+            <div class="ui segment inverted middle" style="margin-top: 30px;">
+              <p id="quote" style="font-size: 20px;"></p>
+              <button class="ui button inverted orange" id="jquery">Inspirational Quote</button>
+            </div>
+          </div>
+          <!-- <p style="margin-top: 20px;" class="middle">To switch the version of this website, please click one of the buttons below:</p>
+          <div class="btncontainer fit">
+            <button class="ui button teal btn">Node.js</button>
+            <button class="ui button red btn">Rails</button>
+            <button class="ui button green btn">Python</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

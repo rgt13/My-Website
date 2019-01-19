@@ -1,0 +1,94 @@
+{% extends "basic_app/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <h1 class="hobbies" style="text-align: center; border: 2px solid grey;">Projects</h1>
+    <div class="ui internally celled grid">
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/javafx.png' %}"/>
+          <img class="languagepics" src="{% static 'images/java.png' %}"/>
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">FSU-Themed Monopoly Game</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Final group project required by my Java professor at Florida State. It exemplifies object-oriented principles, utilizes JavaFX & SceneBuilder, and was compiled by both Eclipse and by the JDK in the command line. My responsiblities included movement of the board pieces, space events, chance cards and community chest. I implemented JavaFX to design the board in accordance to FSU Campus.</p>
+            <button class="ui button inverted red">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/csharp.png' %}"/>
+          <img class="languagepics" src="{% static 'images/unity.png' %}"/>
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">2-D RPG Platformer - 'Cat-Aclysm'</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Group project as a part of my Video Game Design class in the Computational Science department. This project taught me about the robustness of the Unity Engine and provided me with insight on the game development industry. My responsibilities included the jumping, attack, and health mechanics, assisting in level design and programming character/enemy movement.</p>
+            <a href="https://github.com/DIG-TEAM10/groupgame_DIG3725"><button class="ui button inverted red">Source Code</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/python.png' %}">
+          <img class="languagepics" src="{% static 'images/flask.png' %}">
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">RESTful API Design Project</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Utilized Flask libraries to exemplify RESTful API design in Python, demonstrated GET, PUT, POST, DELETE requests & created example store inventory pages to test requests.</p>
+            <button class="ui button inverted red">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/python.png' %}">
+          <img class="languagepics" src="{% static 'images/tableau.png' %}">
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">Data Science / Machine Learning Side Project</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Designed robust regression models in Tableau, formed accurate sample predictions based on data displayed in numerous files, employed deep learning methodologies & k-means/hierarchical clustering.</p>
+            <button class="ui button inverted red">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/html.png' %}">
+          <img class="languagepics" src="{% static 'images/css.png' %}">
+          <img class="languagepics" src="{% static 'images/javascript.png' %}">
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">Color Picker Game</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Practiced encapsulation & scalability in simple color picker game, facilitated JavaScript functions to change color of boxes when clicked. Implemented ‘Reset’ button, random number generator for hidden correct box and decorating other box choices, styled in Semantic UI for easier readability & better aesthetics.</p>
+            <a href="https://github.com/rgt13/Color-Game"><button class="ui button inverted red">Source Code</button></a>
+            <a href="{% url 'basic_app:colorgame' %}"><button class="ui button inverted blue">Play Game</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="row">
+        <div class="three wide column">
+          <img class="languagepics" src="{% static 'images/html.png' %}">
+          <img class="languagepics" src="{% static 'images/css.png' %}">
+          <img class="languagepics" src="{% static 'images/node.png' %}">
+        </div>
+        <div class="ten wide column">
+          <h2 class="hobbies middle">Playground Blog Site Side Project</h2>
+          <div class="ui raised inverted very text container segment padded fit" style="background: rgba(0, 0, 0, 0.5);">
+            <p>Exemplified web development conventions within video game blog site, utilized CSS, HTML, and JavaScript frameworks for setup, and employed Bootstrap styling for ease of readability. Implemented Node.js libraries to demonstrate GET, POST, PUT, DELETE requests for adding, editing, redirecting, and deleting blog posts.</p>
+            <button class="ui button inverted red">Source Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

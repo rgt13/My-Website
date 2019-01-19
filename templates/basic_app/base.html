@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+
+    <title>My Website</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/website.css' %}"/>
+
+    <!--Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+
+
+  </head>
+
+  <body style="background: url('/static/images/darker.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+    <div class="ui secondary menu" style="background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif'); margin-bottom: 0px;">
+      <a class="item active" href="{% url 'index' %}">
+        <button class="ui inverted button homepage"><i class="home icon"></i>Home</button>
+      </a>
+
+      <div class="right menu">
+        <a class="item" href="https://www.github.com/rgt13" style="margin-top: 3px;">
+          <button class="ui inverted blue button"><i class="sitemap icon"></i>Github</button>
+        </a>
+      </div>
+    </div>
+
+    {% block body_block %}
+    {% endblock %}
+    <div class="ui raised inverted very text container segment middle" style="background: none;">
+      <p class="hobbies">This website version was programmed within the Django Framework!</p>
+      <p class="hobbies">The source code for this website can be found here:</p>
+      <button class="ui button inverted yellow"><i class="folder open icon"></i>Source Code</button>
+    </div>
+  </body>
+  <script src="{% static 'scripts/website.js' %}"></script>
+</html>
