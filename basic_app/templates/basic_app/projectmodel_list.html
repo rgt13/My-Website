@@ -1,0 +1,37 @@
+{% extends "basic_app/basic_app_base.html" %}
+{% block body_block %}
+
+  <h1 class="ui header aligned center icon inverted">Here is a comprehensive list of my coding projects:</h1>
+
+  <div class="ui list two column middle">
+    {% for project in projects %}
+    <div class="ui item medium container">
+      <div class="ui small images">
+        {% for image in project.languages.all %}
+        <img class="ui small circular image" src="../../static/images/{{image.image}}">
+        {% endfor %}
+      </div>
+
+      <h2><li><a href="{{project.id}}">{{project.name}}</a></li></h2>
+      <div class="ui text container">
+        <a href="#"><button class="ui button inverted red"><i class="ui icon github sqaure"></i>Source Code</button></a>
+      </div>
+      <div class="ui horizontal divider inverted text container">
+        <h4 class="ui horizontal divider header inverted" style="color: white;">
+          <i class="tag icon inverted"></i>
+            Description
+        </h4>
+      </div>
+
+      <div class="ui text container">
+        <p style="background: rgba(0,0,0,0.2); color: white;">{{project.description}}</p>
+      </div>
+      <div class="ui divider inverted"></div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+
+{% endblock %}
