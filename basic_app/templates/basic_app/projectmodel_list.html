@@ -1,7 +1,14 @@
 {% extends "basic_app/basic_app_base.html" %}
 {% block body_block %}
 
-  <h1 class="ui header aligned center icon inverted">Here is a comprehensive list of my coding projects:</h1>
+  <h1 class="ui header aligned center icon inverted">
+    <i class="keyboard inverted circular icon"></i>
+    <div class="content">
+      Projects
+    </div>
+  </h1>
+
+  <div class="ui divider inverted"></div>
 
   <div class="ui list two column middle">
     {% for project in projects %}
