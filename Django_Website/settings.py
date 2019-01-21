@@ -26,7 +26,7 @@ MEDIA_ROOT = os.path.join(STATIC_DIR, 'images')
 SECRET_KEY = '0c)3gt54s(i1&lj#mq=uj*-6e&s7t=q^uw16*)^%on)b&2dhj#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = []
 
 
