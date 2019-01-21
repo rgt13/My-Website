@@ -15,7 +15,7 @@
     <div class="ui item medium container">
       <div class="ui small images">
         {% for image in project.languages.all %}
-        <img class="ui small circular image" src="../../static/images/{{image.image}}">
+        <img class="ui small circular image" src="../../static/images/uploads/{{image.name}}.{{image.extension}}">
         {% endfor %}
       </div>
 

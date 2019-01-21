@@ -4,6 +4,7 @@ from django.db import models
 class ImageModel(models.Model):
     name = models.CharField(max_length=255, null=True)
     image = models.ImageField(upload_to="uploads", null=True)
+    extension = models.CharField(max_length=255, null=True)
 
 
 class ProjectModel(models.Model):
