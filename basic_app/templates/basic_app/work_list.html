@@ -1,0 +1,40 @@
+{% extends "basic_app/basic_app_base.html" %}
+{% block body_block %}
+
+<h1 class="ui header aligned center icon inverted">
+  <i class="server inverted circular icon"></i>
+  <div class="content">
+    Work Experience
+  </div>
+</h1>
+
+<div class="ui divider inverted"></div>
+
+<div class="ui list two column middle">
+  {% for experience in work %}
+    <div class="ui item medium container">
+      <div class="ui medium images">
+        {% for logos in experience.logo.all %}
+        <img class="ui medium image" src="../../static/images/uploads/{{logos.name}}.{{logos.extension}}">
+        {% endfor %}
+      </div>
+
+      <h2 style="color: white;"><li>{{experience.position}}</li></h2>
+
+      <div class="ui horizontal divider inverted text container">
+        <h4 class="ui horizontal divider header inverted" style="color: white;">
+          <i class="tag icon inverted"></i>
+            Responsibilities
+        </h4>
+      </div>
+
+      <div class="ui text container">
+        <p style="background: rgba(0,0,0,0.2); color: white;">{{experience.description}}</p>
+      </div>
+      <div class="ui divider inverted"></div>
+    </div>
+
+
+  {% endfor %}
+
+{% endblock %}

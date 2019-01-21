@@ -11,5 +11,6 @@ urlpatterns = [
     path("gifgenerator/", views.gifgenerator, name='gifgenerator'),
     path("projects/", views.projects, name='projects'),
     path("colorgame/", views.colorgame, name="colorgame"),
-    path("project_list", views.ProjectListView.as_view(), name="list")
+    path("project_list", views.ProjectListView.as_view(), name="list"),
+    path("work_experience", views.WorkListView.as_view(), name="work"),
 ]

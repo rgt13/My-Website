@@ -8,7 +8,7 @@
           <div class="ui left rail">
             <div class="ui segment inverted middle" style="margin-top: 30px;">
               <p id="spongebob" class="" style="margin-top: 10px;"></p>
-              <button id="giphy" class="ui button inverted red">Generate Gif</button>
+              <button id="giphy" class="ui button inverted red"><i class="icon tv"></i>Generate Gif</button>
             </div>
           </div>
           <div class="ui segment inverted" style="background: none;">
@@ -20,14 +20,14 @@
               <a href="{% url 'basic_app:about' %}"><button class="ui button inverted teal btn"><i class="address card icon"></i>About Me</button></a>
               <a href="{% url 'basic_app:list' %}"><button class="ui button inverted purple btn"><i class="code icon"></i>Projects</button></a>
               <a href="{% static 'media/resume.pdf' %}"><button class="ui button inverted green btn"><i class="file alternate icon"></i>Resume</button></a>
-              <!-- <a href="{% url 'basic_app:gifgenerator' %}"><button class="ui button red btn"><i class="tv icon"></i>Gif Generator</button></a> -->
+              <a href="{% url 'basic_app:work' %}"><button class="ui button inverted red"><i class="archive icon"></i>Work Experience</button></a>
             </div>
           </div>
 
           <div class="ui right rail">
             <div class="ui segment inverted middle" style="margin-top: 30px;">
               <p id="quote" style="font-size: 20px;"></p>
-              <button class="ui button inverted orange" id="jquery">Inspirational Quote</button>
+              <button class="ui button inverted orange" id="jquery"><i class="icon paragraph"></i>Inspirational Quote</button>
             </div>
           </div>
           <!-- <p style="margin-top: 20px;" class="middle">To switch the version of this website, please click one of the buttons below:</p>

@@ -29,10 +29,10 @@ class ProjectListView(ListView):
     context_object_name = "projects"
     model = models.ProjectModel
 
-class ProjectDetailView(DetailView):
-    context_object_name = "project_detail"
-    model = models.ProjectModel
-    template_name = "basic_app/project_detail.html"
+class WorkListView(ListView):
+    context_object_name = "work"
+    model = models.WorkModel
+    template_name = "basic_app/work_list.html"
 
 def colorgame(request):
     return render(request, "basic_app/Color.html")
