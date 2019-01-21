@@ -6,7 +6,7 @@ from django.views.generic import (  View,
                                     CreateView,
                                     UpdateView,
                                     DeleteView)
-from . import models
+import models
 
 # Create your views here.
 
